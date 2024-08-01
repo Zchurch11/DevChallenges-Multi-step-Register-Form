@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Multi-Step Register Form</title>
+</head>
+<body>
+    <img class="radial-right" src="./images/blur-radial.svg" alt="">
+    <img class="radial-left" src="./images/blur-radial.svg" alt="">
+    <main class="content">
+        <section class="cards-container">
+            <form action="" class="card" id="card-1">
+                <h4>Register</h4>
+                <label for="name">Name</label>
+                <input class="name-input" type="text" name="name" id="name" placeholder="enter your name" required>
+                
+                <label for="email">Email</label>
+                <input class="email-input" type="text" name="email" id="email" placeholder="example@gmail.com" required>
+                <button class="submit-btn" type="submit">Continue</button>
+                
+            </form>
+            <!-- Step 2 -->
+            <form action="" class="card" id="card-2">
+                <h4>Which topics are you interested in?</h4>
+                <label class="" for="software-development" data-value="Software Development">Software Development
+                    <input type="checkbox" name="software-development" id="software-development" >
+                </label>
+                <label for="user-experience" data-value="User Experience">User Experience
+                    <input type="checkbox" name="user-experience" id="user-experience" >
+                </label>
+                <label for="graphic-design" data-value="Graphic Design">Graphic Design
+                    <input type="checkbox" name="graphic-design" id="graphic-design" >
+                </label>
+                
+                
+                    <button class="submit-btn"  type="submit">Continue</button>
+                
+            </form>
+            <!-- Step 3 -->
+            <form action="" class="card" id="card-3">
+                <h4>Summary</h4>
+                <p><span class="text-gray">Name:</span> Emily Johnson</p>
+                <p><span class="text-gray">Email:</span> emily@emilyjohnsonstl.com</p>
+                <ul class="topics-el"><span class="text-gray">Topics:</span>
+                    <li>User Experience</li>
+                    <li>Graphic Design</li>
+                </ul>
+                    <button class="submit-btn" type="submit">Confirm</button>
+            </form>
+        </section>
+        <div class="step-container">
+            <small class="step-text">Step 1 of 3</small>
+            <div class="step-indicators">
+                <span class="step current"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
